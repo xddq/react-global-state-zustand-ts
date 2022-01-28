@@ -1,3 +1,15 @@
+# React global state managemant with zustand in typescript
+
+- Testing out react and figuring out which global state management tool I will
+  use. Since I have heard bad stuff about redux (and have a good experience
+  replacing vuex with my own store in my projects) I am happy to test out
+  alternatives and will _probably never touch redux_ :].
+- Here I am testing out [zustand](https://github.com/pmndrs/zustand)
+
+# Why did I decide against coding an own store using useContext?
+
+- [drawbacks of useContext](https://github.com/pmndrs/zustand#user-content-why-zustand-over-context)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
