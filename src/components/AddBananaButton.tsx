@@ -1,12 +1,16 @@
 import React from "react";
+import useStore from "./GlobalState";
+
 /**
  * @description This component will be used to add a banana to our global state.
  */
 
 // can also write React.FC which maps to this.
 const AddBananaButton: React.FunctionComponent = () => {
+  const addBanana = useStore((state) => state.addBanana);
   const handleClick = (_: React.MouseEvent<HTMLButtonElement>): void => {
-    console.log("button was clicked.");
+    console.log("adding a banana to global state.");
+    addBanana();
   };
 
   return (

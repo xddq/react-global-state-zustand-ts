@@ -5,23 +5,23 @@ import useStore from "./GlobalState";
  */
 
 // can also write React.FC which maps to this.
-const AddAppleButton: React.FunctionComponent = () => {
-  const addApple = useStore((state) => state.addApple);
+const ResetFruitsButton: React.FunctionComponent = () => {
+  const clearFruits = useStore((state) => state.clearFruits);
   const handleClick = (_: React.MouseEvent<HTMLButtonElement>): void => {
     // increases the amount of apples by one. See the definition of addApple in
     // our state for more info.
-    addApple();
-    console.log("adding an apple to global state.");
+    clearFruits();
+    console.log("deleting fruits from global state.");
   };
 
   return (
     <button
-      className="text-2xl text-green-600 font-medium bg-gray-300 rounded-xl p-4 hover:bg-gray-400"
+      className="text-2xl text-pink-600 font-medium bg-gray-300 rounded-xl p-4 hover:bg-gray-400"
       onClick={handleClick}
     >
-      Add an apple!
+      Get rid of fruits!
     </button>
   );
 };
 
-export default AddAppleButton;
+export default ResetFruitsButton;

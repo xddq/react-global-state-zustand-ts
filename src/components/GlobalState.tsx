@@ -11,6 +11,7 @@ interface GlobalState {
   bananas: number;
   addApple: () => void;
   addBanana: () => void;
+  clearFruits: () => void;
 }
 
 // creates our store(our global state). The set function merges the current
@@ -21,6 +22,7 @@ const useStore = create<GlobalState>((set) => ({
   bananas: 0,
   addApple: () => set((state) => ({ apples: state.apples + 1 })),
   addBanana: () => set((state) => ({ bananas: state.bananas + 1 })),
+  clearFruits: () => set((_) => ({ bananas: 0, apples: 0 })),
 }));
 
 export default useStore;

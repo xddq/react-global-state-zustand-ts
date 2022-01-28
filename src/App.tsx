@@ -3,6 +3,7 @@ import AddAppleButton from "./components/AddAppleButton";
 import AddBananaButton from "./components/AddBananaButton";
 import Apples from "./components/Apples";
 import Bananas from "./components/Bananas";
+import ResetFruitsButton from "./components/ResetFruits";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="buttons flex justify-center items-center space-x-4">
         <AddAppleButton />
         <AddBananaButton />
+        <ResetFruitsButton />
       </div>
     </div>
   );
