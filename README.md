@@ -1,4 +1,4 @@
-# React global state managemant with zustand in typescript
+# React - global state managemant with zustand in typescript
 
 - Testing out react and figuring out which global state management tool I will
   use. Since I have heard bad stuff about redux (and have a good experience
